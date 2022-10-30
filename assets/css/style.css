@@ -393,6 +393,7 @@ selector{
   height: 100vh;
   width: 168vh;
   padding-top: 60px;
+  position: relative;
 }
 
 #hero h2 {
