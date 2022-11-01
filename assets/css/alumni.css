@@ -40,8 +40,6 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
-
-
 /*--------------------------------------------------------------
 # Disable AOS delay on mobile
 --------------------------------------------------------------*/
@@ -59,7 +57,7 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  background:black;
+  background: black;
 }
 
 #header.header-transparent {
@@ -87,7 +85,7 @@ h6 {
 
 #header .logo img {
   padding: 0;
-  margin: 100px;;
+  margin: 100px;
   max-height: 40px;
 }
 
@@ -137,7 +135,7 @@ h6 {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover>a {
+.navbar li:hover > a {
   background: #ef6603;
 }
 
@@ -174,11 +172,11 @@ h6 {
 
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover>a {
+.navbar .dropdown ul li:hover > a {
   color: #fff;
 }
 
-.navbar .dropdown:hover>ul {
+.navbar .dropdown:hover > ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
@@ -190,7 +188,7 @@ h6 {
   visibility: hidden;
 }
 
-.navbar .dropdown .dropdown:hover>ul {
+.navbar .dropdown .dropdown:hover > ul {
   opacity: 1;
   top: 0;
   left: 100%;
@@ -202,7 +200,7 @@ h6 {
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
 }
@@ -271,7 +269,7 @@ h6 {
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover>a {
+.navbar-mobile li:hover > a {
   color: #fff;
 }
 
@@ -306,11 +304,11 @@ h6 {
 
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover>a {
+.navbar-mobile .dropdown ul li:hover > a {
   color: #fff;
 }
 
-.navbar-mobile .dropdown>.dropdown-active {
+.navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
 /*--------------------------------------------------------------
@@ -338,7 +336,7 @@ section {
   margin: 0 0 5px 0;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color:white;
+  color: white;
   font-family: "Poppins", sans-serif;
 }
 
@@ -365,11 +363,9 @@ section {
 # About
 --------------------------------------------------------------*/
 
-
 /*--------------------------------------------------------------
 # projects
 --------------------------------------------------------------*/
-
 
 /*--------------------------------------------------------------
 # Team
@@ -415,11 +411,11 @@ section {
   }
 }
 
-.breadcrumbs ol li+li {
+.breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.breadcrumbs ol li+li::before {
+.breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
   color: black;
@@ -440,17 +436,15 @@ section {
   }
 }
 
-
-
-
 .container {
   position: relative;
   display: flex;
   justify-content: center;
-  
+
   align-items: center;
   flex-wrap: wrap;
   margin: 40px 0;
+  min-width: 80%;
 }
 .container .card {
   position: relative;
@@ -498,15 +492,12 @@ section {
   transition-delay: 0.1s;
   opacity: 1;
   transform: translateY(-20px);
-  
 }
 .container .card:hover .content .contentBx h3 {
   opacity: 1;
   transform: translateY(0);
- 
 }
 .container .card .content .contentBx h3 span {
-  
   font-size: 13px;
   font-weight: 400;
   text-transform: initial;
@@ -535,7 +526,7 @@ section {
   font-size: 24px;
 }
 
-.container .card .imgBx img{
+.container .card .imgBx img {
   width: 100%;
   height: auto;
 }
@@ -546,17 +537,17 @@ section {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #7e7e7e; 
+  background: #7e7e7e;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #ef6603; 
+  background: #ef6603;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
 
 /*--------------------------------------------------------------
@@ -564,7 +555,7 @@ section {
 --------------------------------------------------------------*/
 #footer {
   background: black;
-  color:#fff;
+  color: #fff;
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
@@ -620,6 +611,3 @@ section {
 #footer .credits {
   font-size: 13px;
 }
-
-
-

@@ -160,7 +160,7 @@ h6 {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover>a {
+.navbar li:hover > a {
   background: #ef6603;
 }
 
@@ -197,11 +197,11 @@ h6 {
 
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover>a {
+.navbar .dropdown ul li:hover > a {
   color: white;
 }
 
-.navbar .dropdown:hover>ul {
+.navbar .dropdown:hover > ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
@@ -213,7 +213,7 @@ h6 {
   visibility: hidden;
 }
 
-.navbar .dropdown .dropdown:hover>ul {
+.navbar .dropdown .dropdown:hover > ul {
   opacity: 1;
   top: 0;
   left: 100%;
@@ -225,7 +225,7 @@ h6 {
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
 }
@@ -294,7 +294,7 @@ h6 {
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover>a {
+.navbar-mobile li:hover > a {
   color: #fff;
 }
 
@@ -329,23 +329,25 @@ h6 {
 
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover>a {
+.navbar-mobile .dropdown ul li:hover > a {
   color: #fff;
 }
 
-.navbar-mobile .dropdown>.dropdown-active {
+.navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
 
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-selector{
-  size:value;
-  color:value;
+selector {
+  size: value;
+  color: value;
 }
 
-
+.container {
+  min-width: 80%;
+}
 
 .typewriter h1 {
   text-align: center;
@@ -356,16 +358,13 @@ selector{
   color: white;
   z-index: 5;
   color: #fff;
-  font-family:eb-garamond, serif;
+  font-family: eb-garamond, serif;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(30, end),
-    blink-caret .5s step-end infinite;
-
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
 }
 #hero {
   width: 100%;
@@ -550,14 +549,23 @@ selector{
 }
 
 @keyframes typing {
-  from { width: 0 }
-  to { width: 45% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 45%;
+  }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -586,7 +594,7 @@ section {
   margin: 0 0 5px 0;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color:white;
+  color: white;
   font-family: "Poppins", sans-serif;
 }
 
@@ -606,7 +614,7 @@ section {
   font-weight: 700;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color:white;
+  color: white;
 }
 
 /*--------------------------------------------------------------
@@ -631,7 +639,7 @@ section {
   position: relative;
 }
 
-.about .content ul li+li {
+.about .content ul li + li {
   margin-top: 10px;
 }
 
@@ -725,7 +733,6 @@ section {
   line-height: 24px;
   margin-bottom: 0;
 }
-
 
 /*--------------------------------------------------------------
 # projects
@@ -933,7 +940,10 @@ section {
   position: relative;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
@@ -941,7 +951,10 @@ section {
   border: 1px solid #ef6603;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
   background-color: #ef6603;
 }
 
@@ -964,7 +977,7 @@ section {
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.portfolio-details .portfolio-info ul li + li {
   margin-top: 10px;
 }
 
@@ -985,8 +998,6 @@ section {
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
-
-
 
 /*--------------------------------------------------------------
 # Team
@@ -1141,7 +1152,7 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contact .php-email-form .error-message br + br {
   margin-top: 25px;
 }
 
@@ -1189,7 +1200,7 @@ section {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   background: #ef6603;
   border: 0;
   padding: 10px 24px;
@@ -1198,7 +1209,7 @@ section {
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: #fc8129;
 }
 
@@ -1253,11 +1264,11 @@ section {
   }
 }
 
-.breadcrumbs ol li+li {
+.breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.breadcrumbs ol li+li::before {
+.breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
   color: #404356;
@@ -1283,7 +1294,7 @@ section {
 --------------------------------------------------------------*/
 #footer {
   background: black;
-  color:#fff;
+  color: #fff;
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
@@ -1345,93 +1356,99 @@ section {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #7e7e7e; 
+  background: #7e7e7e;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #ef6603; 
+  background: #ef6603;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
 
-
-.sponsors{
+.sponsors {
   background-color: black;
-  padding:30px
+  padding: 30px;
 }
 
-
-.grid-container{
-  grid-gap:1px;
-  background-color:#4f4949;
-  border:1px solid #4f4949;
-  display:grid;
-  grid-template-columns:1fr 1fr 1fr 1fr;
-  grid-template-rows:1fr;
-  margin:auto;
-  max-width:900px
+.grid-container {
+  grid-gap: 1px;
+  background-color: #4f4949;
+  border: 1px solid #4f4949;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin: auto;
+  max-width: 900px;
 }
-.grid-container div{
+.grid-container div {
   background-color: black;
-  border-color:#071013;
-  font-size:30px;
-  padding:20px 0;
-  text-align:center
+  border-color: #071013;
+  font-size: 30px;
+  padding: 20px 0;
+  text-align: center;
 }
-.grid-item{
-  align-items:center;
-  display:flex;
-  justify-content:center;
-  transition:all .3s ease
+.grid-item {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transition: all 0.3s ease;
 }
-.grid-item .grid-img{
-  align-items:center;
-  display:flex;
-  height:auto;
-  max-width:100%;
-  opacity:.7;
-  transition:all .2s ease-in-out;
-  width:70%
+.grid-item .grid-img {
+  align-items: center;
+  display: flex;
+  height: auto;
+  max-width: 100%;
+  opacity: 0.7;
+  transition: all 0.2s ease-in-out;
+  width: 70%;
 }
-.grid-item:nth-child(3) .grid-img,.grid-item:nth-child(4) .grid-img,.grid-item:nth-child(8) .grid-img{
-  -webkit-transform:scale(.8);
-  transform:scale(.8)
+.grid-item:nth-child(3) .grid-img,
+.grid-item:nth-child(4) .grid-img,
+.grid-item:nth-child(8) .grid-img {
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
 }
-@media only screen and (max-width:768px){
-  .grid-item:nth-child(3) .grid-img,.grid-item:nth-child(4) .grid-img,.grid-item:nth-child(8) .grid-img{
-      margin:0;
-      -webkit-transform:scale(.8);
-      transform:scale(.8);
-      width:50px
+@media only screen and (max-width: 768px) {
+  .grid-item:nth-child(3) .grid-img,
+  .grid-item:nth-child(4) .grid-img,
+  .grid-item:nth-child(8) .grid-img {
+    margin: 0;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    width: 50px;
   }
 }
-.grid-item:nth-child(19) .grid-img{
-  height:auto;
-  width:70px
+.grid-item:nth-child(19) .grid-img {
+  height: auto;
+  width: 70px;
 }
-@media only screen and (max-width:768px){
-  .grid-item:nth-child(19) .grid-img{
-      margin:0;
-      -webkit-transform:scale(.6);
-      transform:scale(.6);
-      width:50px
+@media only screen and (max-width: 768px) {
+  .grid-item:nth-child(19) .grid-img {
+    margin: 0;
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+    width: 50px;
   }
 }
 
-.grid-item:hover{
-  background: linear-gradient(90deg, rgb(220, 113, 60) 0%, rgb(245, 36, 71) 100%);
-  box-shadow:0 0 15px 5px white;
-  z-index:10
+.grid-item:hover {
+  background: linear-gradient(
+    90deg,
+    rgb(220, 113, 60) 0%,
+    rgb(245, 36, 71) 100%
+  );
+  box-shadow: 0 0 15px 5px white;
+  z-index: 10;
 }
-.grid-item:hover .grid-img{
-  opacity:1
+.grid-item:hover .grid-img {
+  opacity: 1;
 }
-.grid-item p{
-  color:#fff;
-  font-size:1.5rem;
-  margin:auto
+.grid-item p {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: auto;
 }
