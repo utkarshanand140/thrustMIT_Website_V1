@@ -58,6 +58,7 @@ h6 {
   z-index: 997;
   transition: all 0.5s;
   background: black;
+  justify-content: center;
 }
 
 #header.header-transparent {
