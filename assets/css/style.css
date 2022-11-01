@@ -370,7 +370,10 @@ selector {
   width: 100%;
   overflow: hidden;
   position: relative;
-  background: linear-gradient(0deg, rgb(42, 44, 57) 0%, rgb(51, 54, 74) 100%);
+  justify-content: center;
+  background-image: black;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 0;
 }
 
@@ -382,7 +385,7 @@ selector {
   text-align: center;
   position: relative;
   height: 100vh;
-  width: 168vh;
+  width: 100%;
   padding-top: 60px;
   position: relative;
 }
