@@ -445,6 +445,13 @@ section {
   transform: translateY(30px) scale(0.5);
 }
 
+@media only screen and (max-width: 403px)
+{
+  .container .cards:hover .imgBx {
+    transform: translateY(30px) scale(0.4);
+  }
+}
+
 .container .cards .imgBx img {
   position: absolute;
   top: 0;
