@@ -437,6 +437,13 @@ section {
   }
 }
 
+.centered {
+  background-color: #000;
+  color: #fff;
+  opacity: 0.7;
+  width: 150%;
+}
+
 .container {
   position: relative;
   display: flex;
